@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lequan.lichvannien">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_APP_BADGE" />
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <application
+        android:name="com.example.lequan.lichvannien.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppTheme"
+        android:fullBackupContent="@xml/backup_descriptor">
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.SplashActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fb6056e08bf4294972659c24d7ce217c80515fbd" />
+
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.PersonalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.StarDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.GieoQueActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.QueDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.VanKhanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.VanKhanChildActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.VanKhanDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.AnhNenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.HolidayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.HolidayDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.UpgradePremiumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.DiaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.ListDiaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.EventActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.ListEventActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.ZodiacActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.EventDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.WebViewScreenActionbar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.WeatherActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.TuViSoMenhActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.TuViSoMenhListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.lequan.lichvannien.activity.LaBanActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.onesignal.PermissionsActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.example.lequan.lichvannien.base.ads.PopupCustom"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:exported="false"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.facebook.ads.AudienceNetworkActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:noHistory="true" />
+
+
+        <activity
+            android:name="com.example.lequan.lichvannien.base.ads.OtherAppLauncher"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:theme="@style/com_facebook_activity_theme" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true" />
+        <activity android:name="com.facebook.CustomTabMainActivity" />
+
+    </application>
+</manifest>

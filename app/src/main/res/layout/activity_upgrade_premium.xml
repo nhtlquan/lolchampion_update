@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff2d3f46" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivBanner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/upgrade_premium_bg" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/ivBanner" android:layout_alignBottom="@id/ivBanner">
+        <ImageView android:id="@id/ivClose" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_margin="5.0dip" android:src="@drawable/ic_close_white_24dp" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/ivClose">
+            <TextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/tvTitleUpgradePremium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/rlOk" android:layout_below="@id/ivBanner">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/ivRemoveAds" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_margin="10.0dip" android:src="@drawable/upgrade_premium_remove_ads" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/ivRemoveAds" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="Gỡ bỏ quảng cáo" />
+                <TextView android:textColor="#ffbbbbbb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="Gỡ bỏ toàn bộ quảng cáo tại mọi ví trí trong ứng dụng." android:maxLines="2" android:minLines="2" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/ivSupport" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_margin="10.0dip" android:src="@drawable/ic_account_circle_green_a700_48dp" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="33.0dip" android:layout_height="wrap_content" android:src="@drawable/upgrade_premium_tag" android:adjustViewBounds="true" android:layout_alignRight="@id/ivSupport" android:layout_alignBottom="@id/ivSupport" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/ivSupport" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="Hỗ trợ" />
+                <TextView android:textColor="#ffbbbbbb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="Nhận được hỗ trợ trực tuyến trong suốt quá trình sử dụng." android:maxLines="2" android:minLines="2" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/ivUpdate" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_margin="10.0dip" android:src="@drawable/ic_update_blue_a700_48dp" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="33.0dip" android:layout_height="wrap_content" android:src="@drawable/upgrade_premium_tag" android:adjustViewBounds="true" android:layout_alignRight="@id/ivUpdate" android:layout_alignBottom="@id/ivUpdate" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/ivUpdate" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="Cập nhật" />
+                <TextView android:textColor="#ffbbbbbb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="Luôn được ưu tiên nhận bản cập nhật mới nhất của ứng dụng." android:maxLines="2" android:minLines="2" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/ivCheckData" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_margin="10.0dip" android:src="@drawable/upgrade_premium_data" android:layout_centerVertical="true" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/ivCheckData" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="Dữ liệu" />
+                <TextView android:textColor="#ffbbbbbb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="Dữ liệu luôn được kiểm duyệt chặt chẽ trước khi cung cấp." android:maxLines="2" android:minLines="2" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rlOk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/bottom">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/tvOk" android:background="@drawable/upgrade_premium_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Nâng cấp ngay" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:background="@drawable/upgrade_premium_tag_2" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginRight="-55.0dip" android:layout_alignTop="@id/tvOk" android:layout_alignRight="@id/tvOk" android:rotation="10.0">
+            <TextView android:textColor="#ffffff00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="  30.000 vnđ" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/bottom" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

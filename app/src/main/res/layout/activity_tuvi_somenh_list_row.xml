@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/bg_white_1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/home_footer_tu_vi" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:ellipsize="end" android:id="@id/tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:text="Tết thường niên" android:maxLines="2" android:layout_toLeftOf="@id/ivMuiTen" android:layout_toRightOf="@id/iv" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/ivMuiTen" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/taosukien_ic_mui_ten" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:rotation="270.0" />
+    </RelativeLayout>
+</LinearLayout>

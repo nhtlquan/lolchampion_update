@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffebecef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.example.lequan.lichvannien.base.ads.Banner android:gravity="center" android:layout_gravity="center" android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/layout_top" android:background="#fff7c3e9" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:id="@id/btn_back" android:layout_width="50.0dip" android:layout_height="50.0dip">
+            <ImageView android:id="@id/btn_back_iv" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/ic_back" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@color/colorBlue" android:id="@id/header_button_center_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thay đổi hình nền" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/rcView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/banner" android:layout_below="@id/layout_top" />
+</RelativeLayout>

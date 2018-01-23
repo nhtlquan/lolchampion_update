@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivBG" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bgr_screen_app" android:scaleType="centerCrop" />
+    <com.example.lequan.lichvannien.base.ads.Banner android:gravity="center" android:layout_gravity="center" android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/banner">
+        <RelativeLayout android:background="@drawable/bg_white_1" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <RelativeLayout android:id="@id/btn_back" android:layout_width="50.0dip" android:layout_height="50.0dip">
+                <ImageView android:id="@id/btn_back_iv" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/ic_back" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TỬ VI TRỌN ĐỜI" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@drawable/bg_white_2" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+            <ImageView android:id="@id/imageView8" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" app:srcCompat="@drawable/ico_search" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Lựa chọn Giới tính và Năm sinh của bạn" android:layout_toRightOf="@id/imageView8" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_white_1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/layout_gender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/layout_gender_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nam" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/taosukien_ic_mui_ten" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/layout_gender_line" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="30.0dip" />
+            <RelativeLayout android:id="@id/layout_year" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/layout_year_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1990" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/taosukien_ic_mui_ten" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="30.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="20.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:background="@drawable/bg_white_1" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tvKetQuaTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="KẾT QUẢ" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:id="@id/layout_star" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="35.0dip">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tvSaoTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="SAO: " />
+                <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mộc Đức" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tvHanTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HẠN: " />
+                <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_han" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Huỳnh Tuyền" />
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_result" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" />
+                <WebView android:id="@id/wv_result" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <ProgressBar android:id="@id/pb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <com.example.lequan.lichvannien.custom.DatePicker android:id="@id/datePicker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" app:maxYear="2022" app:minYear="1908" app:setToDay="false" />
+</RelativeLayout>

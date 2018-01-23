@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#80ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/ln_type_cong_viec" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/cong_viec_mini" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorBlue" android:id="@id/tvCongViec" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:text="Công Việc" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/ln_line_cong_viec" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/ln_type_gia_dinh" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/gia_dinh_mini" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorBlue" android:id="@id/tvGiaDinh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:text="Gia Đình" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/ln_line_gia_dinh" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/ln_type_sinh_nhat" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/sinh_nhat_mini" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorBlue" android:id="@id/tvSinhNhat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:text="Sinh Nhật" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/ln_line_sinh_nhat" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/ln_type_ca_nhan" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ca_nhan_mini" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorBlue" android:id="@id/tvCaNhan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:text="Cá Nhân" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/ln_line_ca_nhan" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+        <RelativeLayout android:id="@id/ln_type_nhat_ky" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/nhat_ky_mini" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorBlue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="45.0dip" android:text="Nhật Ký" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/ln_line_nhat_ky" android:background="#80000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ln_close_popup" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

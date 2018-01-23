@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff777777" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivPopup" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <ImageView android:id="@id/ivClose" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_close_black_48dp" android:layout_alignParentRight="true" />
+    <ProgressBar android:id="@id/pb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

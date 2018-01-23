@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_diary" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_top" android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_diary" android:scaleType="centerCrop" />
+        <RelativeLayout android:id="@id/relativeLayout2" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <RelativeLayout android:id="@id/img_back" android:layout_width="50.0dip" android:layout_height="50.0dip">
+                <ImageView android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_back" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/img_save" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/diary_save" android:layout_alignTop="@id/btnMonth" android:layout_alignParentRight="true" />
+            <Button android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/btnMonth" android:background="@drawable/border_date_month_diary" android:layout_width="120.0dip" android:layout_height="30.0dip" android:text="11/2016" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <EditText android:textSize="22.0sp" android:textColor="#ffffffff" android:textColorHint="#ffffffff" android:gravity="center_horizontal" android:id="@id/edt_title" android:background="@drawable/border_title_diary" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="40.0dip" android:hint="Nhập tiêu đề" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:inputType="textPersonName" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layout_top" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/img_bg_diary" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_text_1" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+        <RelativeLayout android:id="@id/relativeLayout3" android:background="#ff91999c" android:layout_width="fill_parent" android:layout_height="0.20000005dip" android:layout_marginBottom="60.0dip" android:layout_alignParentBottom="true" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/layoutCustom" android:background="#ffeef2f3" android:layout_width="fill_parent" android:layout_height="60.0dip" android:weightSum="3.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <RelativeLayout android:id="@id/layout_bg" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textColor="#ff446371" android:id="@id/tv_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Ảnh nền" android:layout_below="@id/img_bg" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/img_bg" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="7.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:srcCompat="@drawable/bg_change" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textColor="#ff446371" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Kiểu chữ" android:layout_below="@id/img_text" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/img_text" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="7.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:srcCompat="@drawable/text_size" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/layout_color" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/img_color" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="7.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" app:srcCompat="@drawable/text_color" />
+                <TextView android:textColor="#ff446371" android:id="@id/tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Màu chữ" android:layout_below="@id/img_color" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:fillViewport="true" android:layout_above="@id/relativeLayout3">
+            <EditText android:textSize="22.0sp" android:textColor="@color/colorGray" android:gravity="center|left|top" android:id="@id/edt_input" android:background="@android:color/transparent" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="Nhập nội dung" />
+        </ScrollView>
+        <RelativeLayout android:id="@id/layoutTotal" android:background="#ffeef2f3" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginBottom="61.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/imageView18" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="17.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/diary_previous" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/imageView17" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="17.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/diary_next" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <android.support.v7.widget.RecyclerView android:id="@id/rc_diary" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_toLeftOf="@id/imageView17" android:layout_toRightOf="@id/imageView18" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/layout_avatar" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="100.0dip">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@id/image" android:layout_width="90.0dip" android:layout_height="wrap_content" android:src="@drawable/bg_avatar_diary" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:riv_border_color="#ffffffff" />
+    </RelativeLayout>
+</RelativeLayout>

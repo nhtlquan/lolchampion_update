@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_header" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:id="@id/layout_headerdf" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/img_header" android:layout_width="7.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:srcCompat="@drawable/time_line_top" />
+        </RelativeLayout>
+        <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/popup_text_color" android:id="@id/textView4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="SỰ KIỆN TRONG THÁNG" android:layout_toRightOf="@id/layout_headerdf" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ln_click" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:id="@id/layoutTop" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/img_left" android:layout_width="7.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:srcCompat="@drawable/time_line_center" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/layoutTop" android:layout_alignParentRight="@id/layoutTop">
+            <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="@color/popup_text_color" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tết thường niên" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                <ImageView android:id="@id/imageView3" android:layout_width="14.0dip" android:layout_height="14.0dip" app:srcCompat="@drawable/time" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/popup_text_color" android:id="@id/tv_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="10/10 (Âm lịch)" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:background="#80dbdbdb" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="30.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

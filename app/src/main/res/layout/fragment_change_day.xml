@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.example.lequan.lichvannien.base.ads.Banner
+        android:id="@id/banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <RelativeLayout
+        android:id="@id/layout_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@drawable/bg_white_1">
+
+        <TextView
+            android:id="@id/header_button_center_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Đổi ngày - Tìm ngày"
+            android:textColor="@color/colorBlue"
+            android:textSize="18.0sp" />
+
+        <ImageView
+            android:id="@id/header_button_right_iv_upgrade_premium"
+            android:layout_width="50.0dip"
+            android:layout_height="50.0dip"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:padding="12.0dip"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_upgrade_premium" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/tab"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="25.0dip"
+        android:layout_marginRight="25.0dip"
+        android:background="@drawable/bg_doingay_select_tab">
+
+        <ImageView
+            android:id="@id/centerLineTab"
+            android:layout_width="1.0dip"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:background="#ffffffff" />
+
+        <RelativeLayout
+            android:id="@id/tab_changeday"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/centerLineTab"
+            android:background="@drawable/bg_doingay_select_tab_selected_left">
+
+            <TextView
+                android:id="@id/tv_changeday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Đổi ngày"
+                android:textColor="@color/colorBlue"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/tab_best_day"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/centerLineTab">
+
+            <TextView
+                android:id="@id/tv_best_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Tìm ngày tốt"
+                android:textColor="@color/colorBlue"
+                android:textSize="18.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/root_bestday"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/layout_top"
+        android:gravity="center"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/tab"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@id/llTimNgay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/bg_white_1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@id/rl_work"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:layout_marginTop="20.0dip">
+
+                <TextView
+                    android:id="@id/btn_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Chọn việc cần làm"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/taosukien_ic_mui_ten" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:layout_marginTop="7.0dip"
+                android:background="#ffffffff" />
+
+            <RelativeLayout
+                android:id="@id/rl_Time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:layout_marginTop="20.0dip">
+
+                <TextView
+                    android:id="@id/btn_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Chọn tháng/năm"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/taosukien_ic_mui_ten" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:layout_marginTop="7.0dip"
+                android:background="#ffffffff" />
+
+            <Button
+                android:id="@id/btn_search"
+                android:layout_width="225.0dip"
+                android:layout_height="50.0dip"
+                android:layout_below="@id/popup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/bg_canhan_btupdate"
+                android:text="Tìm kiếm"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlue"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@id/layout_result"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/llTimNgay"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/bg_white_1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/tv_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10.0dip"
+                android:gravity="center_horizontal"
+                android:text="Ngày đẹp Cầu tài trong tháng 11/2016"
+                android:textColor="@color/colorBlue"
+                android:textSize="14.0sp"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/rc_best_day"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@id/root_changeday"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/layout_top"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/tab"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip">
+
+                <TextView
+                    android:id="@id/tvDuongLichTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Dương Lịch"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_toLeftOf="@id/tvDuongLichTitle"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/doingay_ic_duonglich" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25.0dip"
+                android:layout_marginRight="25.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/bg_whell_doingay">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip"
+                    android:layout_centerVertical="true"
+                    android:background="#ffffffff" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="105.0dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <kankan.wheel.widget.WheelView
+                        android:id="@id/solar_day"
+                        android:layout_width="fill_parent"
+                        android:layout_height="105.0dip"
+                        android:layout_weight="1.0" />
+
+                    <kankan.wheel.widget.WheelView
+                        android:id="@id/solar_month"
+                        android:layout_width="fill_parent"
+                        android:layout_height="105.0dip"
+                        android:layout_weight="1.0" />
+
+                    <kankan.wheel.widget.WheelView
+                        android:id="@id/solar_year"
+                        android:layout_width="fill_parent"
+                        android:layout_height="105.0dip"
+                        android:layout_weight="1.0" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30.0dip">
+
+                <TextView
+                    android:id="@id/tvAmLichTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Âm Lịch"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="18.0sp" />
+
+                <ImageView
+                    android:layout_width="15.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_toLeftOf="@id/tvAmLichTitle"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/doingay_ic_amlich" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25.0dip"
+                android:layout_marginRight="25.0dip"
+                android:layout_marginTop="10.0dip"
+                android:background="@drawable/bg_whell_doingay">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="35.0dip"
+                    android:layout_centerVertical="true"
+                    android:background="#ffffffff" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="105.0dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <kankan.wheel.widget.WheelView
+                        android:id="@id/lunar_day"
+                        android:layout_width="fill_parent"
+                        android:layout_height="105.0dip"
+                        android:layout_weight="1.0" />
+
+                    <kankan.wheel.widget.WheelView
+                        android:id="@id/lunar_month"
+                        android:layout_width="fill_parent"
+                        android:layout_height="105.0dip"
+                        android:layout_weight="1.0" />
+
+                    <kankan.wheel.widget.WheelView
+                        android:id="@id/lunar_year"
+                        android:layout_width="fill_parent"
+                        android:layout_height="105.0dip"
+                        android:layout_weight="1.0" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@id/btn_detail"
+                android:layout_width="200.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginTop="20.0dip"
+                android:background="@drawable/bg_canhan_btupdate"
+                android:text="Xem chi tiết ngày"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlue"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

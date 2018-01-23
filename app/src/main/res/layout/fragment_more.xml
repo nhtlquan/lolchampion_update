@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.example.lequan.lichvannien.base.ads.Banner android:gravity="center" android:layout_gravity="center" android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/layout_top" android:background="@drawable/bg_white_1" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/colorBlue" android:id="@id/header_button_center_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mở rộng" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/header_button_right_iv_upgrade_premium" android:padding="12.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_upgrade_premium" android:scaleType="centerCrop" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ScrollView android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/banner" android:layout_below="@id/layout_top">
+        <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="20.0dip">
+                <RelativeLayout android:id="@id/upgrade" android:background="@drawable/bg_more_upgrade" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginRight="20.0dip">
+                    <ImageView android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/e3" android:layout_above="@id/upgrade_tv" />
+                    <ImageView android:id="@id/ivCheck" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_check_green_a700_48dp" android:layout_above="@id/upgrade_tv" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:gravity="center_horizontal" android:id="@id/upgrade_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:text="Mua ứng dụng" android:maxLines="2" android:minLines="2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/anhnen" android:background="@drawable/morong_anh_nen" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginLeft="20.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:gravity="center_horizontal" android:id="@id/anhnen_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:text="Ảnh nền" android:maxLines="2" android:minLines="2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="20.0dip">
+                <RelativeLayout android:id="@id/weather" android:background="@drawable/morong_thoi_tiet" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginRight="20.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:gravity="center_horizontal" android:id="@id/weather_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:text="Thời tiết" android:maxLines="2" android:minLines="2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/van_khan" android:background="@drawable/morong_van_khan" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginLeft="20.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:gravity="center_horizontal" android:id="@id/van_khan_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:text="Văn khấn" android:maxLines="2" android:minLines="2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="20.0dip">
+                <RelativeLayout android:id="@id/la_ban" android:background="@drawable/morong_la_ban" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginRight="20.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:gravity="center_horizontal" android:id="@id/la_ban_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:text="La Bàn" android:maxLines="2" android:minLines="2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/xoso" android:background="@drawable/morong_xo_so" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginLeft="20.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:gravity="center_horizontal" android:id="@id/xoso_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:text="Xổ số" android:maxLines="2" android:minLines="2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="20.0dip">
+                <RelativeLayout android:id="@id/sinh_hoc" android:background="@drawable/morong_nhip_sinh_hoc" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginRight="20.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:gravity="center_horizontal" android:id="@id/sinh_hoc_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:text="Nhịp sinh học" android:maxLines="2" android:minLines="2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/y_nghia_ngay_le" android:background="@drawable/morong_y_nghia_ngay_le" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginLeft="20.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:gravity="center_horizontal" android:id="@id/y_nghia_ngay_le_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:text="Ý nghĩa các ngày lễ" android:maxLines="2" android:minLines="2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="20.0dip">
+                <RelativeLayout android:id="@id/chia_se" android:background="@drawable/morong_chia_se" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginRight="20.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:gravity="center_horizontal" android:id="@id/chia_se_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:text="Chia sẻ" android:maxLines="2" android:minLines="2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/phan_hoi" android:background="@drawable/morong_y_kien" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginLeft="20.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:gravity="center_horizontal" android:id="@id/phan_hoi_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:text="Phản hồi" android:maxLines="2" android:minLines="2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="20.0dip">
+                <RelativeLayout android:id="@id/danh_gia" android:background="@drawable/morong_danh_gia" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginRight="20.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:gravity="center_horizontal" android:id="@id/danh_gia_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip" android:text="Đánh giá" android:maxLines="2" android:minLines="2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginLeft="20.0dip" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="20.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlWidget" android:background="@drawable/bgr_banner" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+            <TextView android:textStyle="bold" android:textColor="#ff000000" android:id="@id/widget_layout_4x1_tvMonthAndYear_duong_New" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/widget_layout_4x1_tvThu_duong_New" android:layout_below="@id/widget_layout_4x1_tvMonthAndYear_duong_New" android:layout_centerHorizontal="true">
+                <TextView android:textSize="35.0sp" android:textStyle="bold" android:textColor="#ff0b208b" android:id="@id/widget_layout_4x1_tvDay_duong_New" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textStyle="bold" android:textColor="#ff000000" android:id="@id/widget_layout_4x1_tvThu_duong_New" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true">
+            <TextView android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/widget_layout_4x1_tvYear_am_New" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/widget_layout_4x1_tvDay_am_New" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/widget_layout_4x1_tvDayText_am_New" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="center" android:id="@id/widget_layout_4x1_tvMonth_am_New" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

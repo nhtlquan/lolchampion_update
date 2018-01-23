@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlSplash" android:background="@drawable/bgr_screen_app" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ivCenter">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ivCenter2">
+            <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="50.0dip" android:layout_marginTop="70.0dip" android:src="@drawable/icon" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/ivCenter2" android:background="#ffffffff" android:layout_width="25.0dip" android:layout_height="1.0dip" android:layout_centerInParent="true" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/colorBlue" android:gravity="center" android:id="@id/tvAppName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/ivCenter2" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:gravity="center" android:id="@id/tvMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="là ứng dụng MIỄN PHÍ, giúp bạn tra cứu Âm lịch, Dương Lịch thuận tiện và nhanh chóng" android:layout_below="@id/tvAppName" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/ivCenter" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_centerInParent="true" />
+    <com.facebook.login.widget.LoginButton android:textSize="18.0sp" android:id="@id/login_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_below="@id/ivCenter" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tvDieuKhoan" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/login_button" android:layout_centerHorizontal="true" />
+    <ProgressBar android:id="@id/pb" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

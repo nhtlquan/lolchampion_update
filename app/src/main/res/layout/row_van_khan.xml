@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_white_1" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:text="Tết thường niên" android:maxLines="2" android:layout_toLeftOf="@id/ivMuiTen" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/ivMuiTen" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:rotation="270.0" app:srcCompat="@drawable/taosukien_ic_mui_ten" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.example.lequan.lichvannien.base.ads.Banner android:gravity="center" android:layout_gravity="center" android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/header" android:background="@drawable/bg_white_1" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:id="@id/btn_today" android:layout_width="50.0dip" android:layout_height="50.0dip">
+            <ImageView android:id="@id/btn_today_iv" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/header_hom_nay" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/header_button_right" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/header_button_right_iv" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/header_ca_nhan" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/header_button_right_iv_upgrade_premium" android:padding="12.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_upgrade_premium" android:scaleType="centerCrop" android:layout_toLeftOf="@id/header_button_right" />
+        <RelativeLayout android:id="@id/header_button_center" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_toLeftOf="@id/header_button_right_iv_upgrade_premium" android:layout_toRightOf="@id/btn_today" android:layout_centerHorizontal="true">
+            <TextView android:textSize="18.0sp" android:textColor="@color/colorBlue" android:id="@id/header_button_center_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11/2016" android:layout_centerInParent="true" />
+            <ImageView android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/taosukien_ic_mui_ten" android:layout_toRightOf="@id/header_button_center_tv" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.example.lequan.lichvannien.samsistemas.calendarview.widget.CalendarView android:id="@id/calendar_view" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/banner" android:layout_below="@id/header" app:calendarBackgroundColor="@null" app:disabledDayBackgroundColor="#ffeef2f3" app:disabledDayTextColor="#80355563" app:weekend="sunday" />
+</RelativeLayout>

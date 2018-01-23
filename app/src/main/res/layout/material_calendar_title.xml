@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/calendarTitlePaddingTop" android:paddingBottom="@dimen/calendarTitlePaddingBottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginBottom="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/left_button" android:background="?selectableItemBackground" android:padding="@dimen/padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_arrow_back_white_24dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="false" android:layout_centerVertical="true" />
+    <TextView android:gravity="center" android:id="@id/dateTitle" android:tag="dateTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/actionbar_size" android:layout_marginRight="@dimen/actionbar_size" android:layout_alignParentTop="false" android:layout_centerInParent="true" style="@style/CalendarView.MonthTitle" />
+    <ImageView android:id="@id/right_button" android:background="?selectableItemBackground" android:padding="@dimen/padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_arrow_forward_white_24dp" android:layout_alignParentTop="false" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@null" android:layout_width="110.0dip" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@null" android:layout_width="110.0dip" android:layout_height="100.0dip" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/rl_avatar" android:background="@drawable/bg_cunghoangdao_ivavatar" android:layout_width="90.0dip" android:layout_height="80.0dip" android:layout_centerInParent="true">
+            <ImageView android:id="@id/img_avatar" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/big_1" android:adjustViewBounds="true" android:layout_above="@id/tv_name" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_name" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Kim Ngưu" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/ivBlue" android:background="@drawable/bg_cunghoangdao_ivavatar_nonselect" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

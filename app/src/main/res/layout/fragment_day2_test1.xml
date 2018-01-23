@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/layout_total" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layout_date">
+        <RelativeLayout android:id="@id/relativeLayout2" android:background="@drawable/bg_white_1" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <RelativeLayout android:id="@id/header_button_left" android:layout_width="50.0dip" android:layout_height="50.0dip">
+                <ImageView android:id="@id/header_button_left_iv" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/header_thoi_tiet" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/header_button_right" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/header_button_right_iv" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/header_ca_nhan" android:scaleType="centerCrop" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/header_button_right_iv_upgrade_premium" android:padding="12.0dip" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_upgrade_premium" android:scaleType="centerCrop" android:layout_toLeftOf="@id/header_button_right" />
+            <RelativeLayout android:id="@id/header_button_center" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_toLeftOf="@id/header_button_right_iv_upgrade_premium" android:layout_toRightOf="@id/header_button_left" android:layout_centerHorizontal="true">
+                <TextView android:textSize="18.0sp" android:textColor="@color/colorBlue" android:id="@id/header_button_center_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11/2016" android:layout_centerInParent="true" />
+                <ImageView android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/taosukien_ic_mui_ten" android:layout_toRightOf="@id/header_button_center_tv" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ViewFlipper android:id="@id/vfDay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/relativeLayout2">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/btn_today" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/header_hom_nay" android:scaleType="centerCrop" />
+                <com.example.lequan.lichvannien.custom.TextViewOutline android:textSize="145.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_calendar_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-30.0dip" android:text="22" android:layout_centerHorizontal="true" app:outlineSize="7.0dip" app:outlineColor="@color/white" />
+                <TextView android:textSize="30.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_week_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="THỨ HAI" android:layout_below="@id/tv_calendar_day" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/colorBlue" android:gravity="bottom|center|right" android:id="@id/tv_author" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="Ngạn ngữ Trung Quốc" android:maxLines="3" android:minLines="3" android:layout_alignParentBottom="true" />
+                <ScrollView android:id="@id/svDanhNgon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/tv_author" android:layout_alignBottom="@id/tv_author">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/colorBlue" android:gravity="center|top" android:id="@id/tv_quotations" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:layout_centerHorizontal="true" />
+                </ScrollView>
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/btn_today1" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/header_hom_nay" android:scaleType="centerCrop" />
+                <com.example.lequan.lichvannien.custom.TextViewOutline android:textSize="145.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_calendar_day1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-30.0dip" android:text="22" android:layout_centerHorizontal="true" app:outlineSize="7.0dip" app:outlineColor="@color/white" />
+                <TextView android:textSize="30.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_week_day1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="THỨ HAI" android:layout_below="@id/tv_calendar_day1" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/colorBlue" android:gravity="bottom|center|right" android:id="@id/tv_author1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:text="Ngạn ngữ Trung Quốc" android:maxLines="3" android:minLines="3" android:layout_alignParentBottom="true" />
+                <ScrollView android:id="@id/svDanhNgon1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/tv_author1" android:layout_alignBottom="@id/tv_author1">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/colorBlue" android:gravity="center|top" android:id="@id/tv_quotations1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip" android:layout_centerHorizontal="true" />
+                </ScrollView>
+            </RelativeLayout>
+        </ViewFlipper>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_date" android:background="@drawable/bg_white_1_nostroker" android:layout_width="fill_parent" android:layout_height="115.0dip" android:layout_marginBottom="5.0dip" android:weightSum="3.0" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="34.0sp" android:textColor="@color/colorBlue" android:id="@id/tvHour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="23:56" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_above="@id/lunar_hour" android:layout_below="@id/tvHour">
+                <ImageView android:id="@id/zodiac_hour" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@drawable/hac_dao" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorBlue" android:id="@id/lunar_hour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="2.0px" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:src="@drawable/line" android:scaleType="centerCrop" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tv_lunar_month">
+                <ImageView android:id="@id/zodiac_day" android:layout_width="10.0dip" android:layout_height="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/hoang_dao" android:layout_alignParentRight="true" />
+                <com.example.lequan.lichvannien.custom.TextViewOutline android:textSize="68.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_lunar_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip" android:text="11" android:layout_centerHorizontal="true" app:outlineSize="3.0dip" app:outlineColor="@color/white" />
+            </RelativeLayout>
+            <TextView android:textSize="20.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_lunar_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="THÁNG 12" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <ImageView android:layout_width="2.0px" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:src="@drawable/line" android:scaleType="centerCrop" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/colorBlue" android:id="@id/lunar_day_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ngày Giáp Dần" android:maxLines="1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/colorBlue" android:id="@id/lunar_month_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tháng Kỷ Hợi" android:maxLines="1" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <TextView android:textSize="13.0sp" android:textColor="@color/colorBlue" android:id="@id/lunar_year_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Năm Bính Thân" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

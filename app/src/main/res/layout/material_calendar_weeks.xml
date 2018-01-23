@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/bg_white_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:weightSum="7.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:tag="dayOfWeekRl1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textStyle="bold" android:textColor="#ff321d5e" android:tag="dayOfWeek1" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_centerInParent="true" style="@style/CalendarView.DayOfTheWeek" />
+    </RelativeLayout>
+    <RelativeLayout android:tag="dayOfWeekRl2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textStyle="bold" android:textColor="#ff321d5e" android:tag="dayOfWeek2" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_centerInParent="true" style="@style/CalendarView.DayOfTheWeek" />
+    </RelativeLayout>
+    <RelativeLayout android:tag="dayOfWeekRl3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textStyle="bold" android:textColor="#ff321d5e" android:tag="dayOfWeek3" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_centerInParent="true" style="@style/CalendarView.DayOfTheWeek" />
+    </RelativeLayout>
+    <RelativeLayout android:tag="dayOfWeekRl4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textStyle="bold" android:textColor="#ff321d5e" android:tag="dayOfWeek4" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_centerInParent="true" style="@style/CalendarView.DayOfTheWeek" />
+    </RelativeLayout>
+    <RelativeLayout android:tag="dayOfWeekRl5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textStyle="bold" android:textColor="#ff321d5e" android:tag="dayOfWeek5" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_centerInParent="true" style="@style/CalendarView.DayOfTheWeek" />
+    </RelativeLayout>
+    <RelativeLayout android:tag="dayOfWeekRl6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textStyle="bold" android:textColor="#ff321d5e" android:tag="dayOfWeek6" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_centerInParent="true" style="@style/CalendarView.DayOfTheWeek" />
+    </RelativeLayout>
+    <RelativeLayout android:tag="dayOfWeekRl7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textStyle="bold" android:textColor="#ffff0000" android:tag="dayOfWeek7" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:layout_centerInParent="true" style="@style/CalendarView.DayOfTheWeek" />
+    </RelativeLayout>
+</LinearLayout>

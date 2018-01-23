@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:tag="weekRow2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="7.0" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_vertical" android:tag="dayOfMonthContainer8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.example.lequan.lichvannien.samsistemas.calendarview.widget.DayView android:textSize="@dimen/solar_size" android:textStyle="bold" android:gravity="center" android:tag="dayOfMonthText8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/CalendarView.DayOfTheMonth" />
+            <TextView android:textSize="@dimen/lunar_size" android:gravity="center" android:tag="lunarOfMonthText8" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:tag="image8" android:layout_width="8.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_su_kien_flag" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:tag="dayOfMonthContainer9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.example.lequan.lichvannien.samsistemas.calendarview.widget.DayView android:textSize="@dimen/solar_size" android:textStyle="bold" android:gravity="center" android:tag="dayOfMonthText9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/CalendarView.DayOfTheMonth" />
+            <TextView android:textSize="@dimen/lunar_size" android:gravity="center" android:tag="lunarOfMonthText9" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:tag="image9" android:layout_width="8.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_su_kien_flag" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:tag="dayOfMonthContainer10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.example.lequan.lichvannien.samsistemas.calendarview.widget.DayView android:textSize="@dimen/solar_size" android:textStyle="bold" android:gravity="center" android:tag="dayOfMonthText10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/CalendarView.DayOfTheMonth" />
+            <TextView android:textSize="@dimen/lunar_size" android:gravity="center" android:tag="lunarOfMonthText10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:tag="image10" android:layout_width="8.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_su_kien_flag" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:tag="dayOfMonthContainer11" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.example.lequan.lichvannien.samsistemas.calendarview.widget.DayView android:textSize="@dimen/solar_size" android:textStyle="bold" android:gravity="center" android:tag="dayOfMonthText11" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/CalendarView.DayOfTheMonth" />
+            <TextView android:textSize="@dimen/lunar_size" android:gravity="center" android:tag="lunarOfMonthText11" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:tag="image11" android:layout_width="8.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_su_kien_flag" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:tag="dayOfMonthContainer12" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.example.lequan.lichvannien.samsistemas.calendarview.widget.DayView android:textSize="@dimen/solar_size" android:textStyle="bold" android:gravity="center" android:tag="dayOfMonthText12" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/CalendarView.DayOfTheMonth" />
+            <TextView android:textSize="@dimen/lunar_size" android:gravity="center" android:tag="lunarOfMonthText12" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:tag="image12" android:layout_width="8.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_su_kien_flag" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:tag="dayOfMonthContainer13" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.example.lequan.lichvannien.samsistemas.calendarview.widget.DayView android:textSize="@dimen/solar_size" android:textStyle="bold" android:gravity="center" android:tag="dayOfMonthText13" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/CalendarView.DayOfTheMonth" />
+            <TextView android:textSize="@dimen/lunar_size" android:gravity="center" android:tag="lunarOfMonthText13" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:tag="image13" android:layout_width="8.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_su_kien_flag" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_vertical" android:tag="dayOfMonthContainer14" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.example.lequan.lichvannien.samsistemas.calendarview.widget.DayView android:textSize="@dimen/solar_size" android:textStyle="bold" android:gravity="center" android:tag="dayOfMonthText14" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/CalendarView.DayOfTheMonth" />
+            <TextView android:textSize="@dimen/lunar_size" android:gravity="center" android:tag="lunarOfMonthText14" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="1" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ImageView android:tag="image14" android:layout_width="8.0dip" android:layout_height="wrap_content" android:src="@drawable/special_day_weekend" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

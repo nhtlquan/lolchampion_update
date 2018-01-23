@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/rlCancel" android:background="#66000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rlOK" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_centerInParent="true">
+            <RelativeLayout android:id="@id/rlDanhNgon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+                <ImageView android:id="@id/ivBGDanhNgon" android:layout_width="fill_parent" android:layout_height="350.0dip" android:src="@drawable/bgr_screen_app" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/colorBlue" android:gravity="center|top" android:id="@id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="Người tình rất dễ kiếm và người bạn rất dễ giữ. Cái khó là kiếm được người bạn và giữ được người tình." android:layout_centerHorizontal="true" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tvAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="B. Shaw" android:layout_below="@id/tvContent" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rlDanhNgon" android:layout_alignLeft="@id/rlDanhNgon" android:layout_alignRight="@id/rlDanhNgon">
+                <RelativeLayout android:id="@id/rlHinhNen" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/rlHinhNen_iv" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/share_danh_ngon_hinh_nen" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+                    <TextView android:textColor="@color/colorBlue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Đổi hình nền" android:layout_below="@id/rlHinhNen_iv" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rlSave" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/rlSave_iv" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/share_danh_ngon_luu_anh" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+                    <TextView android:textColor="@color/colorBlue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Lưu ảnh" android:layout_below="@id/rlSave_iv" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rlShare" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:id="@id/rlShare_iv" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="15.0dip" android:src="@drawable/share_danh_ngon_share" android:adjustViewBounds="true" android:layout_centerHorizontal="true" />
+                    <TextView android:textColor="@color/colorBlue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Chia sẻ" android:layout_below="@id/rlShare_iv" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

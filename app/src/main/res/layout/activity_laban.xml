@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rlLaBan" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivBG" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bgr_screen_app" android:scaleType="centerCrop" />
+    <com.example.lequan.lichvannien.base.ads.Banner android:gravity="center" android:layout_gravity="center" android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/layout_top" android:background="@drawable/bg_white_1" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:id="@id/btn_back" android:layout_width="50.0dip" android:layout_height="50.0dip">
+            <ImageView android:id="@id/btn_back_iv" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/ic_back" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@color/colorBlue" android:id="@id/header_button_center_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="La Bàn" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/btn_camera" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/btn_camera_iv" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/camera" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="20.0sp" android:id="@id/tvHuongContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Hướng" android:layout_below="@id/layout_top" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/ivMuiTen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/huong" android:adjustViewBounds="true" android:layout_below="@id/tvHuongContent" android:layout_centerHorizontal="true" />
+    <ViewFlipper android:id="@id/vfImage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ivMuiTen">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/imageViewCompass" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:adjustViewBounds="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/imageViewCompass1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:adjustViewBounds="true" />
+        </RelativeLayout>
+    </ViewFlipper>
+    <TextView android:textSize="20.0sp" android:textColor="#ffffcd26" android:id="@id/tvToaContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Tây Bắc" android:layout_below="@id/vfImage" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/tvToaContent">
+        <RelativeLayout android:id="@id/rlPrev" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_toLeftOf="@id/tvStyle" android:layout_centerVertical="true">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="20.0dip" android:src="@drawable/taosukien_ic_mui_ten" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:rotation="90.0" />
+        </RelativeLayout>
+        <TextView android:textSize="22.0sp" android:textColor="@color/colorBlue" android:id="@id/tvStyle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mặc định" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/rlNext" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_toRightOf="@id/tvStyle" android:layout_centerVertical="true">
+            <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="20.0dip" android:src="@drawable/taosukien_ic_mui_ten" android:adjustViewBounds="true" android:layout_centerVertical="true" android:rotation="270.0" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rlZoom" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/ivZoom" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/zoom" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ViewFlipper
+        android:id="@id/vfHome"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@id/iv_bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_default" />
+
+        <ImageView
+            android:id="@id/iv_bg1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_default" />
+    </ViewFlipper>
+
+    <FrameLayout
+        android:id="@id/container_body"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/linearLayout"
+        android:background="@null" />
+
+    <FrameLayout
+        android:id="@id/container_month"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/linearLayout"
+        android:background="@null" />
+
+    <FrameLayout
+        android:id="@id/container_change_day"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/linearLayout"
+        android:background="@null" />
+
+    <FrameLayout
+        android:id="@id/container_star"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/linearLayout"
+        android:background="@null" />
+
+    <FrameLayout
+        android:id="@id/container_more"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/linearLayout"
+        android:background="@null" />
+
+    <LinearLayout
+        android:id="@id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_footer_home"
+        android:orientation="horizontal"
+        android:weightSum="5.0">
+
+        <RelativeLayout
+            android:id="@id/rl_top_chart"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip">
+
+            <TextView
+                android:id="@id/tv_top_chart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_top_chart"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3.0dip"
+                android:text="Lịch Ngày"
+                android:textColor="@color/colorBlue"
+                android:textSize="12.0sp" />
+
+            <ImageView
+                android:id="@id/img_top_chart"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/home_footer_lich_ngay" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/rl_search"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip">
+
+            <ImageView
+                android:id="@id/img_search"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/home_footer_lich_thang" />
+
+            <TextView
+                android:id="@id/tv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_search"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3.0dip"
+                android:text="Lịch Tháng"
+                android:textColor="@color/colorBlue"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/rl_my_song"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip">
+
+            <ImageView
+                android:id="@id/img_my_song"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/home_footer_doi_ngay" />
+
+            <TextView
+                android:id="@id/tv_my_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_my_song"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3.0dip"
+                android:text="Đổi Ngày"
+                android:textColor="@color/colorBlue"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/rl_playlist"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip">
+
+            <ImageView
+                android:id="@id/img_playlist"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/home_footer_tu_vi" />
+
+            <TextView
+                android:id="@id/tv_playlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_playlist"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3.0dip"
+                android:text="Tử Vi"
+                android:textColor="@color/colorBlue"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/rl_setting"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:paddingBottom="5.0dip"
+            android:paddingTop="5.0dip">
+
+            <ImageView
+                android:id="@id/img_setting"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/home_footer_mo_rong" />
+
+            <TextView
+                android:id="@id/tv_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_setting"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="3.0dip"
+                android:text="Mở Rộng"
+                android:textColor="@color/colorBlue"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.example.lequan.lichvannien.base.ads.Banner
+        android:id="@id/banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        android:gravity="center"
+        android:visibility="gone"
+        app:isThumbnail="true"
+        app:onlyLocalAds="true" />
+
+    <ImageView
+        android:id="@id/ivClose"
+        android:layout_width="30.0dip"
+        android:layout_height="30.0dip"
+        android:layout_alignRight="@id/banner"
+        android:layout_alignTop="@id/banner"
+        android:background="#ffffffff"
+        android:src="@drawable/bt_close"
+        android:visibility="gone" />
+
+    <com.example.lequan.lichvannien.custom.DatePicker
+        android:id="@id/datePicker"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@id/ivSplash"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_splash" />
+</RelativeLayout>

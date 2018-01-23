@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivBG" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bgr_screen_app" android:scaleType="centerCrop" />
+    <com.example.lequan.lichvannien.base.ads.Banner android:gravity="center" android:layout_gravity="center" android:id="@id/banner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/banner">
+        <RelativeLayout android:background="@drawable/bg_white_1" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <RelativeLayout android:id="@id/btn_back" android:layout_width="50.0dip" android:layout_height="50.0dip">
+                <ImageView android:id="@id/btn_back_iv" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/ic_back" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <TextView android:textSize="18.0sp" android:textColor="@color/colorBlue" android:id="@id/header_button_center_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CHI TIẾT SỰ KIỆN" android:layout_centerInParent="true" />
+            <RelativeLayout android:id="@id/btn_delete" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/btn_delete_iv" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/header_delete" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_category" android:background="@drawable/bg_white_2" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+            <ImageView android:id="@id/img_cate" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/am_lich" android:layout_centerVertical="true" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_solar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Dương lịch: " android:layout_toRightOf="@id/img_cate" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:background="@drawable/bg_white_2" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <ImageView android:id="@id/img_header" android:layout_width="10.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:adjustViewBounds="true" android:layout_centerVertical="true" app:srcCompat="@drawable/xemsukien_ic_tag" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/edt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Tháng 04/2016" android:layout_toRightOf="@id/img_header" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:background="@drawable/bg_white_2" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_fullday_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Thời gian: " android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_fullday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đang diễn ra" android:layout_toRightOf="@id/tv_fullday_title" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:background="@drawable/bg_white_2" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/textView16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Bắt đầu:" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_day_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="05-12-2016" android:layout_toLeftOf="@id/textView1611" android:layout_toRightOf="@id/textView16" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/textView1611" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Vào lúc:" android:layout_toLeftOf="@id/tv_hour_start" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_hour_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="11:30" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:background="@drawable/bg_white_2" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/textView16r" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Kết thúc:" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_day_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="05-12-2016" android:layout_toLeftOf="@id/textView16raa" android:layout_toRightOf="@id/textView16r" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/textView16raa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="Vào lúc:" android:layout_toLeftOf="@id/tv_hour_end" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_hour_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="17:30" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:background="@drawable/bg_white_2" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/textView165" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Lặp lại:" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_report" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="Không lặp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:background="@drawable/bg_white_2" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/textView14565" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Nhắc nhở:" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:gravity="right" android:id="@id/tv_repeat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="Lúc xảy ra sự kiện" android:layout_toRightOf="@id/textView14565" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:background="@drawable/bg_white_2" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/textViewddd14565" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Địa điểm:" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:gravity="right" android:id="@id/edt_address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="Chưa có thông tin" android:layout_toRightOf="@id/textViewddd14565" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:background="@drawable/bg_white_2" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:id="@id/tv_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Ghi chú:" android:layout_centerVertical="true" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/colorBlue" android:gravity="right" android:id="@id/edt_note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="Chưa có thông tin" android:layout_toRightOf="@id/tv_note" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <Button android:textSize="18.0sp" android:textColor="@color/colorBlue" android:id="@id/btn_save" android:background="@drawable/bg_canhan_btupdate" android:layout_width="225.0dip" android:layout_height="50.0dip" android:layout_marginTop="20.0dip" android:text="Sửa sự kiện" android:layout_below="@id/popup" android:layout_centerHorizontal="true" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
